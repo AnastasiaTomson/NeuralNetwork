@@ -17,9 +17,9 @@ ds2, labelKrasnoyarsk = raster.read(forestKrasnoyarsk, bands=1)
 ds3, featuresTest = raster.read(mxTest, bands='all')
 
 # Вывод на экран размера прочитанных данных
-print("Bangalore Multispectral image shape: ", featuresKrasnoyarsk.shape)
-print("Bangalore Binary built-up image shape: ", labelKrasnoyarsk.shape)
-print("Hyderabad Multispectral image shape: ", featuresTest.shape)
+print("Красноярск мультиспектральная форма изображения: ", featuresKrasnoyarsk.shape)
+print("Красноярск бинарная форма изображения: ", labelKrasnoyarsk.shape)
+print("Тестовая мультиспектральная форма изображения: ", featuresTest.shape)
 
 # Изменяем значения NoData на ноль
 labelKrasnoyarsk = (labelKrasnoyarsk == 1).astype(int)
